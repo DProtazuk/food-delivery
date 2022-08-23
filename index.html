@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style/slider.css">
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+
+<body>
+
+    <div class="header">
+        <img data-toggle="modal" data-target="#basket" class="img-logo" src="res/logo.png">
+
+        <div class="header-content">
+            <span class="spanPhone">+ 7 (913) 880 61 64</span>
+            <button class="iconHeader phone"></button>
+            <button class="iconHeader whatsapp"></button>
+            <button class="iconHeader basket"></button>
+        </div>
+    </div>
+
+    <div class="galleryIndex">
+        <button class="buttonGallery galleryLeft"></button>
+
+        <div class="galleryBlock galleryBlock1">
+            <div class="text-galleryBlock">
+                <h2 class="h2-text-galleryBlock" >СКИДКА 10 % ПРИ ЗАКАЗЕ <br> ОТ 3000 РУБЛЕЙ!</h2>
+                <h4 class="h4-text-galleryBlock">Скидка распространяется на все меню <br>
+                    и действует с 9.00 до 20.00 каждый день.
+                </h4>
+                
+                <button class="button-text-galleryBlock pointer">СДЕЛАТЬ ЗАКАЗ</button>
+            </div>
+
+            <img src="/res/Frame 16.png" class="img-galleryBlock">
+
+            <h2 class="h2-text-galleryBlock h2-text-galleryBlock-mini" >СКИДКА 10 % ПРИ ЗАКАЗЕ <br> ОТ 3000 РУБЛЕЙ!</h2>
+
+            <div class="text-galleryBlock-mini">
+                <h4 class="h4-text-galleryBlock h4-text-galleryBlock-mini">Скидка распространяется на все меню <br>
+                    и действует с 9.00 до 20.00 каждый день.
+                </h4>
+
+                <img src="/res/Frame 16.png" class="img-galleryBlock img-galleryBlock-mini">
+            </div>
+            <button class="button-text-galleryBlock button-text-galleryBlock-mini pointer">СДЕЛАТЬ ЗАКАЗ</button>
+
+        </div>
+
+        <button class="buttonGallery galleryRight"></button>
+    </div>
+
+    <div class="menuIndex">
+        <div class="menu">
+            <button class="menuBut pointer menuButActive">завтраки</button>
+            <button class="menuBut pointer">салаты</button>
+            <button class="menuBut pointer">супы</button>
+            <button class="menuBut pointer">воки</button>
+            <button class="menuBut pointer">пасты</button>
+            <button class="menuBut pointer">домашняя еда</button>
+            <button class="menuBut pointer">гарниры</button>
+        </div>
+
+        <div class="content-menu wrapper">
+                <!-- Контент -->
+                <div class="slider">
+
+
+                    <div class="slider__item filter">
+                        <div class="textMenu">
+                            <h2 class="h2-textMenu">Цезарь с курицей</h2>
+                            <h2 class="h2-textMenu-price">200 руб.</h2>
+                            <button data-toggle="modal" data-target="#exampleModal" class="button-textMenu pointer">добавить в заказ</button>
+                        </div>
+                        
+                        <img class="imgMenu" src="res/menu1.png">
+
+                        <div class="textMenu-mini">
+                            <div class="textMenu-min-header w-100">
+
+                            </div>
+
+                            <div class="textMenu-min-footer w-100 p-2">
+                                <div class="w-100 d-flex justify-content-between">
+                                    <h2 class="h2-textMenu">Цезарь с курицей</h2>
+                                    <h2 class="h2-textMenu-price">200 руб.</h2>
+                                </div>
+
+                                <div class="w-100 d-flex align-items-center justify-content-between mt-3">
+                                    <img class="imgMenu imgMenu-mini" src="res/menu1.png">
+                                    <button data-toggle="modal" data-target="#exampleModal"  class="button-textMenu-mini pointer">добавить в заказ</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="slider__item filter">
+                        <div class="textMenu">
+                            <h2 class="h2-textMenu">цезарь  с креветкой</h2>
+                            <h2 class="h2-textMenu-price">250 руб.</h2>
+                            <button class="button-textMenu">добавить в заказ</button>
+                        </div>
+                        
+                        <img class="imgMenu" src="res/menu2.png">
+
+                        <div class="textMenu-mini">
+                            <div class="textMenu-min-header w-100">
+
+                            </div>
+
+                            <div class="textMenu-min-footer w-100 p-2">
+                                <div class="w-100 d-flex justify-content-between">
+                                    <h2 class="h2-textMenu">Цезарь с креветкой</h2>
+                                    <h2 class="h2-textMenu-price">250 руб.</h2>
+                                </div>
+
+                                <div class="w-100 d-flex align-items-center justify-content-between mt-3">
+                                    <img class="imgMenu imgMenu-mini" src="res/menu1.png">
+                                    <button class="button-textMenu-mini">добавить в заказ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+
+    <div class="foot-info">
+        <img src="res/advantages.png" class="imgFooter-Info">
+        <img src="res/advantages(1).png" class="imgFooter-Info">
+        <img src="res/advantages(2).png" class="imgFooter-Info">
+    </div>
+
+    <div class="footer">
+        <div class="footer-mini">
+            <h2 class="h2-footer">Адрес</h2>
+            <h4 class="h4-footer">г. Набережные Челны
+                Аделя Кутуя 1</h4>
+            <h6 class="h6-footer h6-footer-end">Политика конфиденциальности</h6>
+        </div>
+
+        <div class="footer-mini">
+            <h2 class="h2-footer">Ежедневно</h2>
+            <h4 class="h4-footer"> с 10.00 до 2.00</h4>
+            
+            <h6 class="h6-footer h6-footer-end">Условия оплаты и доставки</h6>
+        </div>
+
+        <div class="footer-mini">
+            <h2 class="h2-footer">контакты</h2>
+            <h4 class="h4-footer">+7-917-880-61-64 
+            </h4>
+            <h4 class="h4-footer">nesuedu@yandex.ru
+            </h4>
+            <h6 class="h6-footer">© 2022</h6>
+        </div>
+
+        <div class="footer-mini hidden-mini">
+            <h6 class="h6-footer h6-footer-mini">Политика конфиденциальности</h6>
+            <h6 class="h6-footer h6-footer-mini">Условия оплаты и доставки</h6>
+            <h6 class="h6-footer h6-footer-mini">© 2022</h6>
+        </div>
+    </div>
+</body>
+
+
+
+
+
+<!--Модальные окна-->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Салат овощной</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body modal-body-big1">
+            <img src="res/Rectangle 6(3).png" class="imgProduct-mini">
+
+            <div class="description">
+                <div class="description-header">
+                    <h5 class="h5-description-header">Состав:</h5>
+                    &nbsp;
+                    <span class="h6-description-header">Розовый томат, свежий огурец, болгарский перец</span>
+                </div>
+
+                <div class="description-content">
+                    <h5 class="h4-description-header">Выберите заправку:</h5>
+                    <div class="d-flex flex-wrap">
+                        <div data-active="0" data-id="1" id="div-1" class="d-flex radios">
+                            <div id="1">
+                                <input type="radio"  id="radioButton1" name="contact" value="email">
+                            </div>
+                            <label data-id="radioButton1" for="radioButton1">сметана</label>
+                        </div>
+
+                        <div data-active="0" data-id="2" id="div-1" class="d-flex radios">
+                            <div id="2">
+                                <input type="radio" id="radioButton2" name="contact" value="email">
+                            </div>
+                            <label class="radio" for="radioButton2">майонез</label>
+                        </div>
+
+                        <div data-active="0" data-id="3" id="div-1" class="d-flex radios">
+                            <div id="3">
+                                <input type="radio" class="radios" id="radioButton3" name="contact" value="email">
+                            </div>
+                            <label class="radio" for="radioButton3">оливковое масло</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="description-footer">
+                    <h6>Вес &nbsp;&nbsp;<span>210 гр</span></h6> 
+                    <h6>Калорийность &nbsp;&nbsp;<span>330 ккал</span></h6> 
+                </div>
+            </div>
+
+            <img src="res/Rectangle 6(3).png" class="imgProduct">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btnModal">добавить в заказ</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+  <!-- Modal Корзина -->
+  <div class="modal fade" id="basket" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ваш заказ</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body modal-body-big ">
+            
+            <div class="select-basket">
+                <div class="select-basket-mini">
+                    <div class="left-select-basket-mini">
+                        <img src="res/Rectangle 6(3).png" class="img-select-basket">
+
+                        <div class="left-select-basket-mini-1">
+                            <span class="h3-select-basket">Цезарь с курицей</span>
+                            <span class="span-select-basket">заправка: майонез</span>
+                        </div>
+                    </div>
+
+                    <div class="right-select-basket-mini">
+                        <div class="select-basket-clicker">
+                            <button class="clickerButton clickerButton1"><span class="m-auto">-</span></button>
+                            <input class="input-select-basket" value="1" disabled type="text">
+                            <button class="clickerButton clickerButton2"><span class="m-auto">+</span></button>
+                        </div>
+
+                        <text class="h3-select-basket">
+                            200 р.
+                        </text>
+
+                        <button class="select-basket-Button"></button>
+                    </div>
+                </div>
+
+
+                <div class="select-basket-mini">
+                    <div class="left-select-basket-mini">
+                        <img src="res/Rectangle 6(4).png" class="img-select-basket">
+
+                        <div class="left-select-basket-mini-1">
+                            <span class="h3-select-basket">овощной салат</span>
+                            <span class="span-select-basket">заправка: майонез</span>
+                        </div>
+                    </div>
+
+                    <div class="right-select-basket-mini">
+                        <div class="select-basket-clicker">
+                            <button class="clickerButton clickerButton1"><span class="m-auto">-</span></button>
+                            <input class="input-select-basket" value="1" disabled type="text">
+                            <button class="clickerButton clickerButton2"><span class="m-auto">+</span></button>
+                        </div>
+
+                        <text class="h3-select-basket">
+                            160 р.
+                        </text>
+
+                        <button class="select-basket-Button"></button>
+                    </div>
+                </div>
+
+
+                <div class="select-basket-mini">
+                    <div class="left-select-basket-mini">
+                        <img src="res/Rectangle 6(3).png" class="img-select-basket">
+
+                        <div class="left-select-basket-mini-1">
+                            <span class="h3-select-basket">вок с курицей</span>
+                            <span class="span-select-basket">заправка: майонез</span>
+                        </div>
+                    </div>
+
+                    <div class="right-select-basket-mini">
+                        <div class="select-basket-clicker">
+                            <button class="clickerButton clickerButton1"><span class="m-auto">-</span></button>
+                            <input class="input-select-basket" value="1" disabled type="text">
+                            <button class="clickerButton clickerButton2"><span class="m-auto">+</span></button>
+                        </div>
+
+                        <text class="h3-select-basket">
+                            340 р.
+                        </text>
+
+                        <button class="select-basket-Button"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="select-basket-small">
+                <div class="select-basket-small-mini">
+                    <img src="/res/Rectangle 6(3).png" class="img-mini-basket">
+
+                    <div class="mini-basket2">
+                        <h5 class="h5-mini-basket">Цезарь с курицей</h5>
+                        <div class="clicker-mini">
+                            <button class="clickerButton-mini"><span class="m-auto">-</span></button>
+                            <input class="input-select-basket-mini" value="1" disabled type="text">
+                            <button class="clickerButton-mini"><span class="m-auto">+</span></button>
+                        </div>
+                    </div>
+
+                    <div class="mini-basket3">
+                        <span>200 р.</span>
+                        <button class="button-mini-basket"></button>
+                    </div>
+                </div>
+
+                <div class="select-basket-small-mini">
+                    <img src="/res/Rectangle 6(3).png" class="img-mini-basket">
+
+                    <div class="mini-basket2">
+                        <h5 class="h5-mini-basket">Цезарь с курицей</h5>
+                        <div class="clicker-mini">
+                            <button class="clickerButton-mini"><span class="m-auto">-</span></button>
+                            <input class="input-select-basket-mini" value="1" disabled type="text">
+                            <button class="clickerButton-mini"><span class="m-auto">+</span></button>
+                        </div>
+                    </div>
+
+                    <div class="mini-basket3">
+                        <span>200 р.</span>
+                        <button class="button-mini-basket"></button>
+                    </div>
+                </div>
+
+                <div class="select-basket-small-mini">
+                    <img src="/res/Rectangle 6(3).png" class="img-mini-basket">
+
+                    <div class="mini-basket2">
+                        <h5 class="h5-mini-basket">Цезарь с курицей</h5>
+                        <div class="clicker-mini">
+                            <button class="clickerButton-mini"><span class="m-auto">-</span></button>
+                            <input class="input-select-basket-mini" value="1" disabled type="text">
+                            <button class="clickerButton-mini"><span class="m-auto">+</span></button>
+                        </div>
+                    </div>
+
+                    <div class="mini-basket3">
+                        <span>200 р.</span>
+                        <button class="button-mini-basket"></button>
+                    </div>
+                </div>
+
+                
+
+
+                
+            </div>
+
+            <div class="delivery">
+                <span class="h3-select-basket">доставка</span>
+                <br>
+                <span class="span-select-basket">бесплатная при заказе от 400 рублей</span>
+                <text class="h3-select-basket h3-select-basket-text">
+                    340 р.
+                </text>
+            </div>
+
+            <span class="glaw-price">Сумма<span class="glaw-pricea"> 700р.</span></span>
+
+            <div class="client-info">
+                <label class="label-info">Как вас зовут?</label>
+                <input type="text" class="form-control">
+
+                <label class="label-info">Ваш телефон <span style="color:#909090;">(обязательно)</span></label>
+                <input required type="text" class="form-control">
+
+                <label class="label-info">Ваш адрес <span style="color:#909090;">(обязательно)</label>
+                <input type="text" class="form-control">
+
+                <label class="label-info">Комментарий</label>
+                <textarea class="form-control " name="" id="" cols="30" rows="4" placeholder="Напишите свой коментарий"></textarea>
+            
+                <label class="label-info">Выберите способ оплаты:</label>
+                <div class="radio-div">
+                    <div data-active="0" data-id="10" id="div-1" class="d-flex radios pointer">
+                        <div id="10">
+                            <input type="radio"  id="radioButton1" name="contact" value="email">
+                        </div>
+                        <label data-id="radioButton1" for="radioButton1">онлайн на сайте</label>
+                    </div>
+    
+                    <div data-active="0" data-id="11" id="div-1" class="d-flex radios pointer">
+                        <div id="11">
+                            <input type="radio"  id="radioButton1" name="contact" value="email">
+                        </div>
+                        <label data-id="radioButton1" for="radioButton1">наличными курьеру</label>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="button-textMenu btnModal-basket">сделать заказ</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<script src="js/slick.min.js"></script>
+<script src="js/script.js"></script>
+</html>
